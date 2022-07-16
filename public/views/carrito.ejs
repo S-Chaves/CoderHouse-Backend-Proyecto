@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <link rel="shortcut icon" href="../img/node.ico" />
+  <link rel="stylesheet" href="../css/carrito.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="compra-realizada">
+    <h2 class="subtitulo">Compra realizada con exito</h2>
+    <button class="btn-cerrar">Cerrar</button>
+  </div>
+  <div class="fondo-carrito"></div>
+  <div class="usuario-container">
+    <a href="/">
+      <button>Volver</button>
+    </a>
+  </div>
+  <div class="outer-container carrito-container">
+    <h1 class="titulo">Carrito de Productos</h1>
+    <div class="carrito-inner-container">
+      <% let total = 0; %>
+      <% if(carrito.length) { %>
+        <% carrito.forEach(producto=> { %>
+          <% total += (producto.price * parseInt(producto.cantidad)) %>
+          <div class="producto-carrito">
+            <p><%= producto.title %></p>
+            <p>$<%= producto.price %></p>
+            <div class="img-container">
+              <img src="<%= producto.thumbnail %>" alt="Not Found" />
+            </div>
+            <p>x<%= producto.cantidad %></p>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <p class="carrito-vacio">No hay productos en el carrito</p>
+      <% } %>
+    </div>
+    <div class="carrito-footer">
+      <p class="total">Total: $<%= total %></p>
+      <button class="realizar-compra" 
+      <% if(!carrito.length) { %> disabled <% } %>>
+      Realizar Compra
+    </button>
+    </div>
+  </div>
+  <script src="../js/carrito.js"></script>
+</body>
+</html>

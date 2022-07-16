@@ -1,0 +1,38 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Chat</title>
+	<link rel="shortcut icon" href="../img/node.ico" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/chat.css" />
+</head>
+<body>
+	<div class="outer-container">
+		<div class="mensajes">
+      <div class="mensajes-container">
+        <h2 class="subtitulo" style="margin-top: 0;">Mensajes</h2>
+        <% if(mensajes.length) { %>
+            <% mensajes.forEach(mensaje=> { %>
+              <div class="mensaje">
+                <p>
+                  <span class="mensaje-email"><%= mensaje.author.id %></span>
+                </p>
+                <p>[<span class="mensaje-hora"><%= new Date(Date.parse(mensaje.text.hora)).toLocaleString() %></span>]:</p>
+                <p>
+                  <span class="mensaje-mensaje"><%= mensaje.text.text %></span>
+                </p>
+                <div class="img-container">
+                  <img src="<%= mensaje.author.avatar %>" alt="Not Found" />
+                </div>
+              </div>
+            <% }); %>
+        <% } else { %>
+          <div class="error">
+            <p>No se encontraron Mensajes</p>
+          </div>
+        <% } %>
+      </div>
+    </div>
+	</div>
+</body>

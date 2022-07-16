@@ -1,0 +1,85 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="shortcut icon" href="../img/node.ico" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="carrito">
+      <h2 class="subtitulo">Carrito</h2>
+      <div class="productos-carrito">
+      </div>
+      <div class="btns-carrito">
+        <a href="/carrito"><button class="btn-comprar">Comprar</button></a>
+        <button class="btn-cerrar">Cerrar</button>
+      </div>
+    </div>
+    <div class="fondo-carrito"></div>
+    <div class="usuario-container">
+      <% if(user) { %>
+      <script>
+        // Tiempo que dura el login antes de cerrarse
+        const TIEMPO_SESION = 300000;
+        // Se borran los Timeout anteriores
+        const highestTimeoutId = setTimeout(() => ';');
+        for (let i = 0; i < highestTimeoutId; i++) {
+          clearTimeout(i);
+        }
+        setTimeout(() => { location.href = '/logout'; }, TIEMPO_SESION);
+      </script>
+      <div class="login">
+        <div class="login-info">
+          <h2>Bienvenido/a <%= user.username %></h2>
+          <p><%= user.email %></p>
+        </div>
+        <div class="login-img">
+          <img src=<%= user.avatar %> alt="User Profile Image">
+        </div>
+        <div class="btns-login">
+          <button class="btn-carrito">Carrito</button>
+          <a href="/chat">
+            <button class="btn-chat">Chat</button>
+          </a>
+          <a href="/logout">
+            <button class="btn-desloguear">Desloguear</button>
+          </a>
+        </div>
+      </div>
+      <% } else { %>
+      <a href="/chat">
+        <button>Chat</button>
+      </a>
+      <div class="btns-signup">
+        <a href="/login">
+          <button>Login</button>
+        </a>
+        <a href="/login">
+          <button>Registrarse</button>
+        </a>
+      </div>
+      <% } %>
+    </div>
+    <div class="outer-container">
+      <h1 class="titulo">Ingrese un Producto</h1>
+      <form class="productos-form" method="POST" action="/productos">
+        <label for="title">Nombre</label>
+        <input type="text" name="title" required />
+        <label for="price">Precio</label>
+        <input pattern="^\d+\.?\d*$" type="text" name="price" required />
+        <label for="categoria">Categoria</label>
+        <input type="text" name="categoria" required />
+        <label for="thumbnail">Foto URL</label>
+        <input type="text" name="thumbnail" required />
+        <button type="submit">Agregar Producto</button>
+      </form>
+      <h2 class="subtitulo">Lista de Productos</h2>
+      <div class="productos"></div>
+    </div>
+    <script src="../ejs.min.js"></script>
+    <script type="module" src="../js/index.js"></script>
+  </body>
+</html>

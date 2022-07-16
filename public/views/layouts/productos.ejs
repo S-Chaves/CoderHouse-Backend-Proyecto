@@ -1,0 +1,25 @@
+<% if(productos.length) { %>
+  <div class="table-container">
+    <div class="table-header">
+      <p>Nombre</p>
+      <p>Precio</p>
+      <p>Categoría</p>
+      <p>Foto</p>
+    </div>
+    <% productos.forEach(producto => { %>
+    <div class="producto">
+      <p><%= producto.title %></p>
+      <p>$<%= producto.price %></p>
+      <p><%= producto.categoria %></p>
+      <div class="img-container">
+        <img src="<%= producto.thumbnail %>" alt="Not Found" />
+      </div>
+      <button data-id="<%= producto._id %>" class="btn-agregar">Agregar al Carrito</button>
+    </div>
+    <% }); %>
+  </div>
+<% } else { %>
+  <div class="error">
+    <p>No se encontraron productos</p>
+  </div>
+<% } %>

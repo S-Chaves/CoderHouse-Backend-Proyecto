@@ -1,0 +1,20 @@
+{"level":50,"time":1657758707695,"pid":4428,"hostname":"DESKTOP-N9KHHM7","msg":"MongoExpiredSessionError: Cannot use a session that has ended"}
+{"level":50,"time":1657759498383,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials q20-20020a0568080a9400b0033a1c24effasm110759oij.22 - gsmtp"}
+{"level":50,"time":1657759612569,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657759675020,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials p18-20020a056870569200b000f28a948dd2sm206490oao.21 - gsmtp"}
+{"level":50,"time":1657759676094,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"Error: Authentication Error - invalid username"}
+{"level":50,"time":1657759852351,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"MongoExpiredSessionError: Cannot use a session that has ended"}
+{"level":50,"time":1657759971123,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657759981096,"pid":12780,"hostname":"DESKTOP-N9KHHM7","msg":"MongoExpiredSessionError: Cannot use a session that has ended"}
+{"level":50,"time":1657760286112,"pid":3560,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760565213,"pid":4152,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760574428,"pid":4152,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760587500,"pid":4152,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760598154,"pid":4152,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760616330,"pid":4152,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760680608,"pid":12676,"hostname":"DESKTOP-N9KHHM7","msg":"MongoExpiredSessionError: Cannot use a session that has ended"}
+{"level":50,"time":1657760711225,"pid":12676,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760813983,"pid":5560,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}
+{"level":50,"time":1657760940774,"pid":6584,"hostname":"DESKTOP-N9KHHM7","msg":"MongoExpiredSessionError: Cannot use a session that has ended"}
+{"level":50,"time":1657760970027,"pid":6584,"hostname":"DESKTOP-N9KHHM7","msg":"MongoExpiredSessionError: Cannot use a session that has ended"}
+{"level":50,"time":1657761814065,"pid":12212,"hostname":"DESKTOP-N9KHHM7","msg":"MongoNotConnectedError: MongoClient must be connected to perform this operation"}

@@ -1,0 +1,33 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "minimist": "^1.2.5",
+    "mongoose": "^6.1.8",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "pino": "^7.11.0",
+    "socket.io": "^4.4.1",
+    "twilio": "^3.77.0"
+  }
+}

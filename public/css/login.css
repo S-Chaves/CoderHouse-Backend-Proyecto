@@ -1,0 +1,21 @@
+/******************/
+/* Login y Signup */
+/******************/
+.fa-facebook {
+  font-size: 1.5rem;
+}
+
+.btn-fb {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  width: 15rem;
+  background-color: rgb(59, 89, 152);
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.btn-fb:hover {
+  background-color: rgb(78, 108, 172);
+}

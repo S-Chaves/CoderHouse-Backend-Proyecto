@@ -1,0 +1,15 @@
+<% if(productos.length) { %>
+    <% productos.forEach(producto => { %>
+      <div class="producto-carrito">
+        <p><%= producto.title %></p>
+        <p><%= producto.price %></p>
+        <div class="img-container">
+          <img src="<%= producto.thumbnail %>" alt="Not Found" />
+        </div>
+        <p>x<%= producto.cantidad %></p>
+        <div data-id="<%= producto.id %>" class="btn-elim"></div>
+      </div>
+    <% }); %>
+<% } else { %>
+  <p class="carrito-vacio">No hay productos en el carrito</p>
+<% } %>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="../img/node.ico">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script
+      src="https://kit.fontawesome.com/73b7ddbc6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="usuario-container">
+      <a href="/">
+        <button>Volver</button>
+      </a>
+    </div>
+    <div class="outer-container">
+      <h1 class="titulo">Login de Usuario</h1>
+      <form class="login-form" method="post" action="/auth/login">
+        <label for="email">Email</label>
+        <input type="email" autocomplete="email" name="email" required />
+        <label for="password">Contraseña</label>
+        <input type="password" autocomplete="password" name="password" required />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="outer-container">
+      <h1 class="titulo">Registro de Usuario</h1>
+      <form class="login-form" method="post" action="/auth/signup">
+        <label for="email">Email</label>
+        <input type="email" name="email" required />
+        <label for="username">Nombre de Usuario</label>
+        <input type="text" name="username" required />
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" required />
+        <label for="passwordCopy">Confirmar Contraseña</label>
+        <input type="password" name="passwordCopy" required />
+        <label for="direccion">Dirección</label>
+        <input type="text" name="direccion" required />
+        <label for="edad">Edad</label>
+        <input type="text" name="edad" required />
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" required />
+        <label for="avatar">Avatar</label>
+        <input type="text" name="avatar" required />
+        <button type="submit">Enviar</button>
+      </form>
+      <a href="/auth/facebook">
+        <button type="button" class="btn-fb">
+          <i class="fab fa-facebook"></i>
+          Login con Facebook
+        </button>
+      </a>
+    </div>
+  </body>
+</html>

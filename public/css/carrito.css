@@ -1,0 +1,51 @@
+/*******************/
+/* Página Carrito */
+/*******************/
+.compra-realizada {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding-bottom: 2rem;
+  height: 10rem;
+  width: 40rem;
+  border-radius: 5px;
+  background-color: var(--green400);
+  z-index: 2;
+}
+
+.carrito-container {
+  height: 35rem;
+}
+
+.carrito-inner-container {
+  margin: auto;
+  height: 22rem;
+  width: 35rem;
+  background-color: #fefefe;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.carrito-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.total {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.realizar-compra {
+  margin: 0;
+  background-color: var(--green400);
+}
+
+.realizar-compra:hover {
+  background-color: var(--green600);
+}

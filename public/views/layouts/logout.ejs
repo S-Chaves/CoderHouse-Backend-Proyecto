@@ -1,0 +1,20 @@
+<head>
+  <title>Logout</title>
+  <link rel="shortcut icon" href="../img/node.ico">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+  <div class="usuario-container">
+    <div class="desloguear">
+      <h2>Hasta luego <%= user.username %></h2>
+    </div>
+  </div>
+  <script>
+    const highestTimeoutId = setTimeout(() => ';');
+    for (let i = 0; i < highestTimeoutId; i++) { clearTimeout(i); }
+    setTimeout(() => {
+      location.href = '/';
+    }, 2000);
+  </script>
+</body>
