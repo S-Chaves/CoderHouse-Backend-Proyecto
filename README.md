@@ -28,3 +28,19 @@ si es que este ya estaba. Se debe estar logueado para realizar esta operación.
 - `DELETE /carrito/productos/:id` Recibe un id de producto a través de la ruta y lo elimina del carrito del usuario. 
 Se debe estar logueado para realizar esta operación.
 - `POST /carrito/compra` Envía los mensajes de confirmación de pedido y limpia el carrito del usuario. 
+
+### Ordenes
+- `GET /orden` Retorna un JSON con la información de las ordenes realizadas por el usuario. Se debe estar logueado para realizar esta operación.
+- `POST /orden` Se guarda una nueva orden del usuario en la base de datos con los productos actuales del carrito. Se debe estar logueado para realizar esta operación.
+
+### Autenticación
+- `GET /login` Retorna un render de la sección de login y registro.
+- `GET /logout` Si se está logueado a una cuenta, se desloguea de esta y se redirecciona a la página principal.
+- `POST /auth/login` Recibe un email y contraseña en el cuerpo de la petición y te redirecciona a la página principal si estos son correctos.
+- `POST /auth/signup` Recibe toda la información para un nuevo usuario y lo guarda en la base de datos, además de generar un carrito nuevo para él, y por último
+te redirecciona a la página principal ya logueado.
+
+### Process
+- `GET /info` Retorna un JSON con información acerca del servidor.
+- `GET /api/randoms?cant` Se le puede pasar un número a través de la ruta y este retorna un JSON con números al azar entre 1 y 1000, y la cantidad de veces
+que tocaron. Si no se pasa un valor para cant este es 1000 por defecto.
