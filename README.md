@@ -44,3 +44,68 @@ te redirecciona a la página principal ya logueado.
 - `GET /info` Retorna un JSON con información acerca del servidor.
 - `GET /api/randoms?cant` Se le puede pasar un número a través de la ruta y este retorna un JSON con números al azar entre 1 y 1000, y la cantidad de veces
 que tocaron. Si no se pasa un valor para cant este es 1000 por defecto.
+
+## Models
+### Productos
+```
+{
+  title: { type: String, require: true, max: 100 },
+  price: { type: Number, require: true },
+  thumbnail: { type: String, require: true },
+  categoria: { type: String, require: true }
+}
+```
+
+### Mensajes
+```
+{
+  id: { type: Number, require: true },
+  author: {
+    id: { type: String, require: true, max: 100 },
+    username: { type: String, require: true },
+    apellido: String,
+    edad: Number,
+    alias: String,
+    avatar: { type: String, require: true }
+  },
+  text: {
+    id: { type: Number, require: true },
+    hora: { type: Date, require: true },
+    text: { type: String, require: true }
+  }
+}
+```
+
+### Carritos
+```
+{
+  productos: { type: Array, require: true, default: [] },
+  email: { type: String, require: true },
+  direccion: { type: String, require: true }
+}
+```
+
+### Users
+```
+{
+  userId: String,
+  email: { type: String, require: true },
+  password: String,
+  username: { type: String, require: true },
+  direccion: String,
+  edad: Number,
+  telefono: String,
+  avatar: String
+}
+```
+
+### Ordenes
+```
+{
+  productos: { type: Array, require: true, default: [] },
+  ordenId: { type: Number, require: true },
+  hora: { type: Date, require: true },
+  estado: { type: String, require: true, default: 'generada' },
+  email: { type: String, require: true }
+}
+```
