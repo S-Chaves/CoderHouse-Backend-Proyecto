@@ -20,7 +20,7 @@ class ProcessController {
 
   getRandoms = (req, res) => {
     logRuta(req);
-    let cant = 100000000;
+    let cant = 1000;
     if (!isNaN(parseInt(req.query.cant))) cant = req.query.cant;
     const forked = fork('./src/functions/randoms.js');
 

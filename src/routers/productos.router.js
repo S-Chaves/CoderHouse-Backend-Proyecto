@@ -10,11 +10,11 @@ class RouterProductos {
 
   start() {
     router.get('/', this.controlador.getProds);
-    router.get('/categoria/:categoria', this.controlador.getProdByCategoria);
-    router.get('/:id', this.controlador.getProdById);
     router.post('/', this.controlador.postProds);
+    router.get('/:id', this.controlador.getProdById);
     router.put('/:id', this.controlador.putProds);
     router.delete('/:id', this.controlador.deleteProds);
+    router.get('/categoria/:categoria', this.controlador.getProdByCategoria);
 
     return router;
   }
