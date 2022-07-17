@@ -5,9 +5,9 @@ const MensajesSchema = new mongoose.Schema({
   author: {
     id: { type: String, require: true, max: 100 },
     username: { type: String, require: true },
-    apellido: { type: String, require: true },
-    edad: { type: Number, require: true },
-    alias: { type: String, require: true },
+    apellido: String,
+    edad: Number,
+    alias: String,
     avatar: { type: String, require: true }
   },
   text: {

@@ -29,18 +29,18 @@
 		<h1 class="titulo">Centro de Mensajes </h1>
 		<form class="mensajes-form">
 			<label for="email">Email</label>
-			<input <% if(user) { %> value="<%= user.email %> <% } %>" type="email"
+			<input <% if(user) { %> value="<%= user.email %>" <% } %> type="email"
 			name="email" required />
 			<label for="nombre">Nombre</label>
-			<input <% if(user) { %> value="<%= user.username %> <% } %>" type="text" name="nombre" required />
+			<input <% if(user) { %> value="<%= user.username %>" <% } %> type="text" name="nombre" required />
 			<label for="apellido">Apellido</label>
 			<input type="text" name="apellido" />
 			<label for="edad">Edad</label>
-			<input <% if(user) { %> value="<%= user.edad %> <% } %>" type="text" name="edad" required />
+			<input <% if(user) { %> value="<%= user.edad %>" <% } %> type="text" name="edad" />
 			<label for="alias">Alias</label>
 			<input type="text" name="alias" />
 			<label for="avatar">Avatar</label>
-			<input <% if(user) { %> value="<%= user.avatar %> <% } %>" type="text" name="avatar" required />
+			<input <% if(user) { %> value="<%= user.avatar %>" <% } %> type="text" name="avatar" required />
 			<label for="mensaje">Mensaje</label>
 			<input type="text" name="mensaje" required />
 			<button type="submit">Enviar</button>	
