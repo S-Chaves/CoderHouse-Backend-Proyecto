@@ -22,7 +22,7 @@ class ProcessController {
     logRuta(req);
     let cant = 1000;
     if (!isNaN(parseInt(req.query.cant))) cant = req.query.cant;
-    const forked = fork('./src/functions/randoms.js');
+    const forked = fork('./src/utils/randoms.js');
 
     forked.on('message', msg => {
       msg == 'listo'
