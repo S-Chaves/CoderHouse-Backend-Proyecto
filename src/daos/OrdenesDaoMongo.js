@@ -19,7 +19,7 @@ class OrdenesDaoMongo extends ContenedorMongo {
       const ultimo = await this.model.findOne().sort({ _id: -1 });
       ultimo
         ? orden.ordenId = ultimo.ordenId + 1
-        : orden.odernId = 1;
+        : orden.ordenId = 1;
 
       const newElem = new this.model({ ...orden });
       await newElem.save();

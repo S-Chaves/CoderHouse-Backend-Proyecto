@@ -83,7 +83,7 @@ const sendEmail = async (user, carrito) => {
       `;
     carrito.forEach(prod => html += `
       <li>
-        <p>${prod.title} ${prod.price} x${prod.cantidad}</p>
+        <p>${prod.title} $${prod.price} x${prod.cantidad}</p>
       </li>
     `);
     html += '</ul>';

@@ -37,9 +37,9 @@ const config = {
       authToken: process.env.TWILIO_AUTH_TOKEN
     },
     options: {
-      dev_mail: 'xxxxxxxx@gmail.com',
-      dev_pass: 'mdirxxxxxxxdcfe',
-      dev_num: '+54221xxxxxxx',
+      dev_mail: process.env.DEV_MAIL,
+      dev_pass: process.env.DEV_PASS,
+      dev_num: process.env.DEV_NUM,
       twilio_num: '+19378575278',
       wsp_num: '+14155238886'
     }
