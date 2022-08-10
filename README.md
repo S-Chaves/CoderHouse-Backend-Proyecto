@@ -18,7 +18,7 @@ a esa categoría encontrados.
 
 ### Chat
 - `GET /chat` Retorna un render de la sección de chat.
-- `GET /chat:email` Recibe un email a través de la ruta y retorna un render de todos los mensajes que pertenecen al email pasado.
+- `GET /chat/:email` Recibe un email a través de la ruta y retorna un render de todos los mensajes que pertenecen al email pasado.
 
 ### Carrito
 - `GET /carrito` Retorna un render del carrito del usuario. Se debe estar logueado para ingresar.
