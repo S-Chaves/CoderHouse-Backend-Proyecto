@@ -1,6 +1,6 @@
 # Proyecto Final Backend de CoderHouse
 Este proyecto es una API con varios endpoints creados de lado del servidor para realizar distintas acciones, utilizando el patrón de arquitectura
-MVC. Además realicé el Front End de la aplicación para que sea más fácil e intituivo probar algunas cosas.  
+MVC. Además realicé el Front End de la aplicación para que sea más fácil e intuitivo probar algunas cosas.  
 Todo esto fue realizado usando Node js para el servidor, con varios módulos de este y MongoDB con Mongoose para la persistencia de datos.
 
 El proyecto está subido y se puede ver en [Heroku](https://coderhouse-proyecto-final.herokuapp.com/).
