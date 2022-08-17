@@ -145,6 +145,20 @@ await getProductos();
 const productosForm = document.querySelector('.productos-form');
 productosForm.addEventListener('submit', async (e) => {
   e.preventDefault();
+  const producto = {
+    title: productosForm[0].value,
+    price: productosForm[1].value,
+    categoria: productosForm[2].value,
+    thumbnail: productosForm[3].value
+  }
+
+  await fetch('/productos', {
+    method: 'POST',
+    body: JSON.stringify(producto),
+    headers: {
+      'Content-Type': 'application/json',
+    }
+  });
   await getProductos();
   productosForm.reset();
 });
